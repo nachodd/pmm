@@ -1,24 +1,24 @@
 dev:
-	yarn dev
+	pnpm dev
 
 ci: setup lint test build
 
 format: setup
-	yarn format
+	pnpm format
 
 lint: setup
-	yarn lint
+	pnpm lint
 
 test: setup
-	yarn test
+	pnpm test
 
 setup:
-	yarn install
+	pnpm install
 
 build: setup
-	yarn build
+	pnpm build
 
 release: build
 
 clean:
-	yarn clean
+	pnpm clean
