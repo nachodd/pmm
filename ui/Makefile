@@ -1,10 +1,13 @@
 dev:
 	pnpm dev
 
-ci: setup lint test build
+ci: setup format-check lint test build
 
 format: setup
 	pnpm format
+
+format-check: setup
+	yarn format:check
 
 lint: setup
 	pnpm lint
